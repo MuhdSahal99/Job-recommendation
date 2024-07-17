@@ -71,7 +71,7 @@ def main():
         if resume:
             resumes.append(resume)
 
-    if st.button("Generate Recommendations"):
+    if st.button("Generate Match"):
         if job_descriptions and resumes:
             # Generate embeddings
             job_embeddings = generate_embeddings(job_descriptions, model)
